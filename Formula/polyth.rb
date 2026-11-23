@@ -2,28 +2,28 @@
 class Polyth < Formula
   desc "Server for running and supervising coding agents from any device"
   homepage "https://polyth.app"
-  version "1.2.365"
+  version "1.2.375"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/Polyth/Polyth/releases/download/v1.2.365/polyth-server-1.2.365-darwin-arm64.tar.gz"
-      sha256 "f43b46a337781769ba3a89018b6bfba60f90b30edc18b7ed4e65d166db838204"
+      url "https://github.com/Polyth/Polyth/releases/download/v1.2.375/polyth-server-1.2.375-darwin-arm64.tar.gz"
+      sha256 "22f66d976577426d16a149c5b425a24340d11e0a0bd83c148b9b7e8b9aa5edcb"
     end
     on_intel do
-      url "https://github.com/Polyth/Polyth/releases/download/v1.2.365/polyth-server-1.2.365-darwin-x64.tar.gz"
-      sha256 "34a4a759fb1e37524cd51f75d19c0fe4bc72a660d394306a85e9a2c145a3b845"
+      url "https://github.com/Polyth/Polyth/releases/download/v1.2.375/polyth-server-1.2.375-darwin-x64.tar.gz"
+      sha256 "1e6cb26043657421127663fe316fa660f9f41ed2af52441ec86d7019bb039429"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Polyth/Polyth/releases/download/v1.2.365/polyth-server-1.2.365-linux-arm64.tar.gz"
-      sha256 "5b17f5f25cc2d8383622d0ea49d795b8a7e486f575bce5524091c65a32ed9d47"
+      url "https://github.com/Polyth/Polyth/releases/download/v1.2.375/polyth-server-1.2.375-linux-arm64.tar.gz"
+      sha256 "0c100060ef045803652a7c8f2ecda0b4b0727a4e497bbe451aa48b0760c6bf86"
     end
     on_intel do
-      url "https://github.com/Polyth/Polyth/releases/download/v1.2.365/polyth-server-1.2.365-linux-x64.tar.gz"
-      sha256 "6789ca90fb0896ad253a5fff9f0bd1b28511e425e814978851c34f47c8a02bbf"
+      url "https://github.com/Polyth/Polyth/releases/download/v1.2.375/polyth-server-1.2.375-linux-x64.tar.gz"
+      sha256 "303980e50be5e6630749a9209b6f1dce74c744fc4695b0d781de09f8f164ddf0"
     end
   end
 
@@ -43,7 +43,9 @@ class Polyth < Formula
         polyth server setup-claim
       Then start it now and at login:
         brew services start polyth
-      Update with `brew upgrade polyth`; `polyth update` leaves a Homebrew install to Homebrew.
+      Update with `brew upgrade polyth`, or turn on Settings → About →
+      Update automatically: the server then runs `brew upgrade polyth` itself
+      and `brew services` restarts it into the new release.
     EOS
   end
 
