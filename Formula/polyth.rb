@@ -2,28 +2,28 @@
 class Polyth < Formula
   desc "Server for running and supervising coding agents from any device"
   homepage "https://polyth.app"
-  version "1.2.375"
+  version "1.2.380"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/Polyth/Polyth/releases/download/v1.2.375/polyth-server-1.2.375-darwin-arm64.tar.gz"
-      sha256 "22f66d976577426d16a149c5b425a24340d11e0a0bd83c148b9b7e8b9aa5edcb"
+      url "https://github.com/Polyth/Polyth/releases/download/v1.2.380/polyth-server-1.2.380-darwin-arm64.tar.gz"
+      sha256 "f1a27f4f64c962d1d9c55d628c11246759bb55abad285ba24fdcd06cf5b5c259"
     end
     on_intel do
-      url "https://github.com/Polyth/Polyth/releases/download/v1.2.375/polyth-server-1.2.375-darwin-x64.tar.gz"
-      sha256 "1e6cb26043657421127663fe316fa660f9f41ed2af52441ec86d7019bb039429"
+      url "https://github.com/Polyth/Polyth/releases/download/v1.2.380/polyth-server-1.2.380-darwin-x64.tar.gz"
+      sha256 "3440f471cd66e6a59369b0a875396183acc3d294e40be51045845e077453d6ad"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Polyth/Polyth/releases/download/v1.2.375/polyth-server-1.2.375-linux-arm64.tar.gz"
-      sha256 "0c100060ef045803652a7c8f2ecda0b4b0727a4e497bbe451aa48b0760c6bf86"
+      url "https://github.com/Polyth/Polyth/releases/download/v1.2.380/polyth-server-1.2.380-linux-arm64.tar.gz"
+      sha256 "e6adc979e15f1b57b765acca632bf4a57d901d04e857c806ae5ee96e7fd26c74"
     end
     on_intel do
-      url "https://github.com/Polyth/Polyth/releases/download/v1.2.375/polyth-server-1.2.375-linux-x64.tar.gz"
-      sha256 "303980e50be5e6630749a9209b6f1dce74c744fc4695b0d781de09f8f164ddf0"
+      url "https://github.com/Polyth/Polyth/releases/download/v1.2.380/polyth-server-1.2.380-linux-x64.tar.gz"
+      sha256 "1a3651082fb5b05ed4c001bd3271680fc5409b891fcfd54efd9f5ff1acdeacb2"
     end
   end
 
